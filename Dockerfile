@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
 ADD sources.list /etc/apt/
+ARG DEBIAN_FRONTEND=noninteractive
 RUN  apt-get update && \
      apt-get install -y curl && \
      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && \
