@@ -1,23 +1,23 @@
 # docker-nvm-node
-docker image based on slim ubuntu with nvm, node@10.12.0, npm, nrm for FE work. 
-* notice: the based version of node is v10.12.0, you can install another by nvm.
+docker image based on ubuntu 20.04 with nvm@0.38.0, node@12.22.5, npm, nrm for FE work. 
+* notice: the based version of node is v12.22.5, you can install another by nvm.
 ## fast use
 ### pull
 please notice your network, if there is a bad network, you can build youself by the methods below.
 ```shell
-docker pull pomelott/nvm-node:latest
+docker pull steventx/docker-nvm-node:latest
 ```
 
 ### build for yourself
-pull the source code from github : [https://github.com/pomelott/docker-nvm-node](https://github.com/pomelott/docker-nvm-node)，and welcome to start on github to encourage.
+pull the source code from github : [https://github.com/RoboNerd/docker-nvm-node](https://github.com/RoboNerd/docker-nvm-node)，and welcome to start on github to encourage.
 ```shell
-docker build -t nvm-node:local-v1 --no-cache --network=host .
+docker build -t docker-nvm-node:local-v1 --no-cache --network=host .
 ```
 * notice: whether to add --network=host depends on network condition
 
 ### run
 ```shell
-   docker run -it pomelott/nvm-node /bin/bash
+   docker run -it steventx/docker-nvm-node /bin/bash
 ```
 ## container tools
 ### nvm
