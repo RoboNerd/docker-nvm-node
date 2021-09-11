@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+VOLUME ["/dev/dataVolume"]
 ADD sources.list /etc/apt/
 ARG DEBIAN_FRONTEND=noninteractive
 RUN  apt-get update && \
