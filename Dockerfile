@@ -8,8 +8,8 @@ RUN  apt-get update && \
 	 [ -s "$NVM_DIR/nvm.sh" ] && \sed -i 's#https://nodejs.org/dist#https://npm.taobao.org/mirrors/node#g' "$NVM_DIR/nvm.sh" && \
 	 sed -i 's#https://iojs.org/dist#https://npm.taobao.org/mirrors/iojs#g' "$NVM_DIR/nvm.sh" && \
      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && \
-     nvm install 12.22.5 && \
-     nvm use 12.22.5 && \
+     nvm install 14.17.3 && \
+     nvm use 14.17.3 && \
      npm install -g nrm yarn && \
      nrm use taobao
 CMD ["node"]
